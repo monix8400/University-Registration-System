@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="CENTER" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: DeepSkyBlue;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab3.javafx.controllers.TeacherActions">
+    <VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: LightSkyBlue;" GridPane.columnIndex="1">
+        <children>
+            <HBox alignment="TOP_RIGHT" prefHeight="30.0" prefWidth="600.0">
+                <children>
+                    <Text fx:id="activeTeacher" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="User" textAlignment="CENTER">
+                        <HBox.margin>
+                            <Insets bottom="5.0" left="10.0" right="10.0" top="10.0" />
+                        </HBox.margin>
+                        <font>
+                            <Font name="DejaVu Serif Bold" size="18.0" />
+                        </font>
+                    </Text>
+                    <Button fx:id="logOutBtnT" alignment="TOP_RIGHT" onAction="#logOutBtnTeacher" style="-fx-background-color: White;" text="Log out">
+                        <HBox.margin>
+                            <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                        </HBox.margin>
+                    </Button>
+                </children>
+            </HBox>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Courses">
+                <font>
+                   <Font name="DejaVu Serif Bold" size="24.0" />
+                </font>
+                <VBox.margin>
+                    <Insets bottom="30.0" left="10.0" right="10.0" top="10.0" />
+                </VBox.margin>
+            </Text>
+        </children>
+        <VBox fx:id="vbox"/>
+    </VBox>
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+      <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+</GridPane>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="CENTER" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: DeepSkyBlue;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab3.javafx.controllers.StudentActions">
+   <VBox fx:id="vbox" alignment="TOP_CENTER" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: LightSkyBlue;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+      <children>
+         <HBox alignment="TOP_RIGHT" prefHeight="30.0" prefWidth="600.0">
+            <children>
+                <Text fx:id="activeStudent" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="User" textAlignment="CENTER">
+                  <HBox.margin>
+                     <Insets bottom="5.0" left="10.0" right="10.0" top="10.0" />
+                  </HBox.margin>
+                  <font>
+                     <Font name="DejaVu Serif Bold" size="18.0" />
+                  </font>
+               </Text>
+               <Button fx:id="logOutBtnS" alignment="TOP_RIGHT" onAction="#logOutBtnStudent" style="-fx-background-color: White;" text="Log out">
+                  <HBox.margin>
+                     <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                  </HBox.margin>
+               </Button>
+            </children>
+         </HBox>
+         <HBox prefHeight="20.0" prefWidth="200.0">
+            <children>
+               <Text text="Your total number of credits is:">
+                  <font>
+                     <Font size="14.0" />
+                  </font>
+                  <HBox.margin>
+                     <Insets left="10.0" right="10.0" />
+                  </HBox.margin></Text>
+                <Text fx:id="credits" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="credits">
+                  <font>
+                     <Font name="DejaVu Serif Bold" size="14.0" />
+                  </font></Text>
+            </children>
+         </HBox>
+          <Label alignment="CENTER" text="Available courses" textAlignment="CENTER">
+            <font>
+               <Font name="DejaVu Serif Bold" size="24.0" />
+            </font>
+            <VBox.margin>
+               <Insets bottom="30.0" left="10.0" right="10.0" top="10.0" />
+            </VBox.margin></Label>
+      </children>
+   </VBox>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
